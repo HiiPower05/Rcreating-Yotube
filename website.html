@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>YouTube Clone</title>
     <style>
+        p {
+            font-family: Roboto, Arial;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
         .thumbnail {
             width: 300px;
             display: block;
@@ -11,15 +19,19 @@
             display: block;
         }
 
-        .video-title {
-            width: 300px;
+        .video-author, .video-stats {
+            font-size: 12px;
+            color: rgb(96, 96, 96);
         }
-
         .video-author {
-
+            margin-bottom: 4px;
         }
-        .video-stats {
-    
+        .video-title {
+            margin-top: 0px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            margin-bottom: 12px;
         }
         .video-preview {
             width: 300px;
@@ -27,24 +39,68 @@
             vertical-align: top;
             margin-right: 15px;
         }
+        .channel-picture {
+            display: inline-block;
+            width: 50px;
+            vertical-align: top;
+        }
+        .video-info {
+            display: inline-block;
+            width: 200px;
+        }
+        .profile-picture {
+            width: 40px;
+            border-radius: 50px;
+        }
+        .thumbnail-row {
+            margin-bottom: 12px;
+        }
     </style>
 </head>
 <body>
-    <input class="search-bar" type="text" placeholder="Search">
-
+    <input class="search-bar"
+     type="text"
+      placeholder="Search">
 
     <div class="video-preview">
-     <img class="thumbnail" src="thumbnail/the beauty of pre rendered.avif">
-     <p class="video-title">The Timeless Beauty of Pre Rendered Graphics</p>
-     <p class="video-author">GamesTalesHQ</p>
-     <p class="video-stats">1.6 views &#183; 1 years ago</p>
+        <div class="thumbnail-row">
+            <img class="thumbnail" 
+            src="thumbnail/the beauty of pre rendered.avif">
+        </div>
+        <div>
+            <div class="channel-picture">
+                <img class="profile-picture" src="channel-pictures/channels4_profile.jpg">
+            </div>
+            <div class="video-info">
+                <p class="video-title">
+                The Timeless Beauty of Pre Rendered Graphics
+            </p>
+
+            <p class="video-author">
+                GamesTalesHQ
+            </p>
+
+            <p class="video-stats">
+                1.6M views &#183; 1 year ago
+            </p>
+            </div>
+        </div>
     </div>
     
     <div class="video-preview">
-     <img class="thumbnail" src="thumbnail/hqdefault.avif">
-     <p class="video-title">The Sound Of Those SHOTS 👊🔊 Stamp Fairtex vs. Bi Nguyen Full Fight</p>
-     <p class="video-author">One Champion</p>
-     <p class="video-stats">29M views &#183; 2 years ago</p>
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnail/hqdefault.avif">
+        </div>
+        <div>
+            <div class="channel-picture">
+                <img class="profile-picture" src="channel-pictures/unnamed.jpg">
+            </div>
+            <div class="video-info">
+            <p class="video-title">The Sound Of Those SHOTS 👊🔊 Stamp Fairtex vs. Bi Nguyen Full Fight</p>
+            <p class="video-author">One Champion</p>
+            <p class="video-stats">29M views &#183; 2 years ago</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
