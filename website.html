@@ -11,9 +11,8 @@
             margin-bottom: 0;
         }
         .thumbnail {
-            width: 300px;
             display: block;
-            margin-top: 10px;
+            width: 100%;
         }
            .search-bar {
             display: block;
@@ -33,18 +32,6 @@
             line-height: 20px;
             margin-bottom: 12px;
         }
-        .video-preview {
-            width: 300px;
-            display: inline-block;
-            vertical-align: top;
-            margin-right: 15px;
-        }
-        .channel-picture {
-            
-        }
-        .video-info {
-            
-        }
         .profile-picture {
             width: 40px;
             border-radius: 50px;
@@ -56,6 +43,12 @@
             display: grid;
             grid-template-columns: 50px 1fr;
         }
+        .video-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 16px;
+            row-gap: 40px;
+        }
     </style>
 </head>
 <body>
@@ -63,7 +56,8 @@
      type="text"
       placeholder="Search">
 
-    <div class="video-preview">
+      <div class="video-grid">
+        <div class="video-preview">
         <div class="thumbnail-row">
             <img class="thumbnail" 
             src="thumbnail/the beauty of pre rendered.avif">
@@ -103,5 +97,89 @@
             </div>
         </div>
     </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" 
+            src="thumbnail/kendrickheartpt5.avif">
+        </div>
+        <div class="video-info-grid">
+            <div class="channel-picture">
+                <img class="profile-picture" src="channel-pictures/kendrick.jpg">
+            </div>
+            <div class="video-info">
+                <p class="video-title">
+                Kendrick Lamar - The Heart Part 5
+            </p>
+
+            <p class="video-author">
+                Kendrick Lamar 
+            </p>
+
+            <p class="video-stats">
+                48M views &#183; 3 years ago
+            </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnail/ThomasFlightThumbnail.avif">
+        </div>
+        <div class="video-info-grid">
+            <div class="channel-picture">
+                <img class="profile-picture" src="channel-pictures/ThomasFlightChannelpic.jpg">
+            </div>
+            <div class="video-info">
+            <p class="video-title">In Praise of Subtle Performance</p>
+            <p class="video-author">Thomas Flight</p>
+            <p class="video-stats">6.4M views &#183; 2 years ago</p>
+            </div>
+        </div>
+    </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" 
+            src="thumbnail/JavascriptThumbnail.avif">
+        </div>
+        <div class="video-info-grid">
+            <div class="channel-picture">
+                <img class="profile-picture" src="channel-pictures/JavascriptChannelPic.jpg">
+            </div>
+            <div class="video-info">
+                <p class="video-title">
+                JavaScript Tutorial Full Course - Beginner to Pro
+            </p>
+
+            <p class="video-author">
+                SuperSimpleDev
+            </p>
+
+            <p class="video-stats">
+                5.5M views &#183; 1 year ago
+            </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnail/AlexLennenThumbnail.avif">
+        </div>
+        <div class="video-info-grid">
+            <div class="channel-picture">
+                <img class="profile-picture" src="channel-pictures/AlexLennenChannelPic.jpg">
+            </div>
+            <div class="video-info">
+            <p class="video-title">The Entire History of Spider-Man in 70 Minutes</p>
+            <p class="video-author">alex lennen</p>
+            <p class="video-stats">4.1M views &#183; 2 years ago</p>
+            </div>
+        </div>
+    </div>
+      </div>
+    
 </body>
 </html>
