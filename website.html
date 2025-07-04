@@ -40,13 +40,10 @@
             margin-right: 15px;
         }
         .channel-picture {
-            display: inline-block;
-            width: 50px;
-            vertical-align: top;
+            
         }
         .video-info {
-            display: inline-block;
-            width: 200px;
+            
         }
         .profile-picture {
             width: 40px;
@@ -54,6 +51,10 @@
         }
         .thumbnail-row {
             margin-bottom: 12px;
+        }
+        .video-info-grid {
+            display: grid;
+            grid-template-columns: 50px 1fr;
         }
     </style>
 </head>
@@ -67,7 +68,7 @@
             <img class="thumbnail" 
             src="thumbnail/the beauty of pre rendered.avif">
         </div>
-        <div>
+        <div class="video-info-grid">
             <div class="channel-picture">
                 <img class="profile-picture" src="channel-pictures/channels4_profile.jpg">
             </div>
@@ -91,7 +92,7 @@
         <div class="thumbnail-row">
             <img class="thumbnail" src="thumbnail/hqdefault.avif">
         </div>
-        <div>
+        <div class="video-info-grid">
             <div class="channel-picture">
                 <img class="profile-picture" src="channel-pictures/unnamed.jpg">
             </div>
